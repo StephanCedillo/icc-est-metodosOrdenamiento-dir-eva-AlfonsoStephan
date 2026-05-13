@@ -15,10 +15,6 @@ public class CartControllerTest {
 
     private CarController controller;
 
-    
-
-
-
     @BeforeEach
     public void setUp() {
         controller = new CarController();
@@ -85,9 +81,9 @@ public class CartControllerTest {
 
         Car[] paraOrdenar = Validators.copiarArreglo(List.of(original));
 
-        contror.sortByName(paraOrdenar);
+        controller.sortByName(paraOrdenar);
 
-        Validators.validarOrdenamientoPorNombre(original, paraOrdlleenar);
+        Validators.validarOrdenamientoPorNombre(original, paraOrdenar);
         Validators.validarCasosEspeciales(paraOrdenar);
     }
 }
